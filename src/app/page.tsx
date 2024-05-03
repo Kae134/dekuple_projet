@@ -1,9 +1,5 @@
-import Test from './components/Test/Test';
-
-export default function Home() {
+export default async function Index() {
   return (
-    <main>
-      <Test />
-    </main>
+    <div>Hello</div>
   )
 }
