@@ -2,6 +2,9 @@
 # <p align="center">Projet Dekuple</p>
   
 
+Conception et développement d'une application web ayant pour but de satisfaire leur clients.
+
+    
 ## 🛠️ Stack Technique
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
@@ -11,19 +14,20 @@
  
 
 ## 🙇 Lead Devs
-- Maxime
-- Louis
+- Maxime : [@Oomaxime](https://github.com/Oomaxime)
+- Louis : [@Kae134](https://github.com/Kae134)
+
 
 ## 🧐 Collaborateurs
 
 #### Développeur Back-end:
 - Hamza 
-- Arnaud
-- Louis
+- Arnaud : [@Jeck0v](https://github.com/Jeck0v)
+- Louis 
 
 #### Développeur Front-end:
-- Alexis 
-- Mickael
+- Alexis : [@Alexis-Gontier](https://github.com/Alexis-Gontier)
+- Mickael : [@MikaHais](https://github.com/MickaHais)
 - Jeson
 
 
