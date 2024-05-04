@@ -21,7 +21,7 @@ Conception et développement d'une application web ayant pour but de satisfaire 
 ## 🧐 Collaborateurs
 
 #### Développeur Back-end:
-- Hamza 
+- Hamza : [@karkasss](https://github.com/karkasss)
 - Arnaud : [@Jeck0v](https://github.com/Jeck0v)
 - Louis 
 
