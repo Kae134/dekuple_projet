@@ -37,37 +37,49 @@ export default function DonutChart(data){
         const context = chartRef.current.getContext("2d");
 
         const newChart = new Chart(context, {
-            type: "doughnut",
+            type: "polarArea",
             data: {
                 labels: infos_labels,
                 datasets: [{
-                    label: 'My First Dataset',
+                    label: 'My Personalized Dataset',
                     data: infos_data,
                     backgroundColor: [
-                    'rgb(255, 99, 132, 0.5)',
-                    'rgb(54, 162, 235, 0.5)',
-                    'rgb(255, 205, 86, 0.5)',
-                    'rgb(255, 99, 132, 0.5)',
-                    'rgb(54, 162, 235, 0.5)',
-                    'rgb(255, 205, 86, 0.5)'
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                        'rgba(255, 205, 86, 0.5)',
+                        'rgba(75, 192, 192, 0.5)',
+                        'rgba(153, 102, 255, 0.5)',
+                        'rgba(255, 159, 64, 0.5)'
                     ],
                     hoverOffset: 4,
                     borderWidth: 1,
                     borderColor: [
-                        'rgb(255, 99, 132, 0.5)',
-                        'rgb(54, 162, 235, 0.5)',
-                        'rgb(255, 205, 86, 0.5)',
-                        'rgb(255, 99, 132, 0.5)',
-                        'rgb(54, 162, 235, 0.5)',
-                        'rgb(255, 205, 86, 0.5)'
-                    ], 
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 205, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
                 }]
-            }, 
+            },
             options: {
                 legend: {
-                    position: 'bottom'
+                    position: 'bottom',
+                    labels: {
+                        font: {
+                            size: 14
+                        }
+                    }
                 },
-                cutoutPercentage: 60 
+                scale: {
+                    ticks : {
+                        display: false,
+                    },
+                    gridLines: {
+                        color: 'rgba(255, 255, 255, 0.2)'
+                    }
+                }
             }
         });
 

@@ -1,6 +1,7 @@
-import styles from "./StatsCards.module.css"
-import { BarChart } from "../charts/BarChart";
-import DonutChart from "../charts/DonutChart"
+import styles from "./StatsCards.module.css";
+import BarChart from "../charts/BarChart";
+import DonutChart from "../charts/DonutChart";
+import PolarChart from "../charts/PolarChart";
 import { createClient } from "@/src/utils/supabase/createClient";
 import { data } from "autoprefixer";
 
@@ -16,23 +17,48 @@ async function StatsCards(where:string, chart:string) {
     switch (chart) {
         case "bar":
             return (
-                <div className={styles.card}>
+                <div className={`${styles.card}`}>
                     <BarChart data={infos}/>
                 </div>
             )
             break;
         case "donut":
             return (
-                <div className={styles.carddonut}>
+                <div className={`${styles.card}`}>
                     <DonutChart data={infos}/>
                 </div>
             )
+        case "polar":
+        return (
+            <div className={`${styles.card}`}>
+                <PolarChart data={infos}/>
+            </div>
+        )
         default:
-            <div className={styles.card}>
+            <div className={`${styles.card}`}>
                 <BarChart data={infos}/>
             </div>
             break;
     }
 }
 
-export { StatsCards }
+function Details(contents:object, angle:boolean){
+    if (angle === true) {
+        return (
+            <div className={`${styles.card} ${styles.carddetails_horizontal} ${styles.top_color_green}`}>
+                <h1>{contents.title}</h1>
+                <p>{contents.main}</p>
+            </div>
+        )
+    } else {
+        return (
+            <div className={`${styles.card} ${styles.carddetails_simple} ${styles.top_color_yellow}`}>
+                <h1>{contents.title}</h1>
+                <p>{contents.main}</p>
+            </div>
+        )
+    }
+    
+}
+
+export { StatsCards, Details }
