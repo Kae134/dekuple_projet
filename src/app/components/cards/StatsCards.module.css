@@ -1,0 +1,20 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161717;
+    width: 22rem;
+    height: 15rem;
+    border-radius: 1rem;
+    box-shadow: inset -2px 4px 10px rgba(0, 0, 0, 0.25);;
+    margin: 1rem;
+}
+
+.carddonut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161717;
+    height: 32rem;
+    width: 32rem;
+}

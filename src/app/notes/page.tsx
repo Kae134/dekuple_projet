@@ -1,5 +1,5 @@
 import { createClient } from '@/src/utils/supabase/server';
-import BarChart from '../components/BarChart';
+import BarChart from '../components/charts/BarChart';
 import { data } from 'autoprefixer';
 
 export default async function Chart() {

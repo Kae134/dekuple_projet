@@ -7,10 +7,6 @@ const LoginForm = () => {
 const [login, setLogin] = useState('');
 const [password, setPassword] = useState('');
 
-const formulaire = (e) => {
-    e.preventDefault();
-};
-
 return (
     <form className={styles.form} onSubmit={formulaire}>
         <h1>Connexion</h1>
