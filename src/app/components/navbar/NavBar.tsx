@@ -9,7 +9,7 @@ function NavLeft() {
     return (
         <div className={styles.Nav_left}>
             <div className={styles.Nav_left_top}>
-                <Link href="">
+                <Link href="https://www.dekuple.com/">
                 <Image
                     src={DekupleLogo}
                     width={40}

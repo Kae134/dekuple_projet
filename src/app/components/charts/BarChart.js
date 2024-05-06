@@ -7,8 +7,6 @@ function BarChart(data){
     const chartRef = useRef(null)
     const infos = data.data
 
-    console.log(data)
-
     let infos_labels = []
     let infos_data = []
 
@@ -24,7 +22,7 @@ function BarChart(data){
         }
     } else if (infos.type === "test") {
         for (const ele of infos.data){
-            infos_labels.push(ele.category)
+            infos_labels.push(ele.category + ":" + ele.value + "%")
             infos_data.push(ele.value)
         }
     }
@@ -44,25 +42,27 @@ function BarChart(data){
                 labels: infos_labels,
                 datasets : [
                     {
-                        label: "Info",
+                        label: infos_labels,
                         data: infos_data,
                         backgroundColor: 
-                        ["rgba(245, 39, 145, 0.5)",
-                        "rgba(245, 39, 145, 0.5)",
-                        "rgba(245, 39, 145, 0.5)",
-                        "rgba(245, 39, 145, 0.5)",
-                        "rgba(245, 39, 145, 0.5)",
-                        "rgba(245, 39, 145, 0.5)",
-                        "rgba(245, 39, 145, 0.5)",
-                        "rgba(245, 39, 145, 0.5)",
-                        "rgba(245, 39, 145, 0.5)",
-                        "rgba(245, 39, 145, 0.5)",
-                        "rgba(245, 39, 145, 0.5)",],
+                        [
+                            'rgba(255, 99, 132, 0.5)',
+                            'rgba(54, 162, 235, 0.5)',
+                            'rgba(255, 205, 86, 0.5)',
+                            'rgba(75, 192, 192, 0.5)',
+                            'rgba(153, 102, 255, 0.5)',
+                            'rgba(255, 159, 64, 0.5)'
+                        ],
                         borderWidth: 1,
                     }
                 ]
             },
             options: {
+                legend: {
+                    labels: {
+                        display:false,
+                    }
+                },
                 scales: {
                     yAxes: [{
                         gridLines: {
@@ -76,7 +76,7 @@ function BarChart(data){
                         gridLines: {
                             color: "rgba(255, 255, 255, 0.1)", 
                         },
-                        barThickness: 40,
+                        barThickness: 30,
                         categoryPercentage: 0.8, 
                         barPercentage: 0.9 
                     }]

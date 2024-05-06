@@ -22,7 +22,7 @@ export default function DonutChart(data){
         }
     } else if (infos.type === "test") {
         for (const ele of infos.data){
-            infos_labels.push(ele.category)
+            infos_labels.push(ele.category + ":" + ele.value + "%")
             infos_data.push(ele.value)
         }
     }
@@ -41,7 +41,6 @@ export default function DonutChart(data){
             data: {
                 labels: infos_labels,
                 datasets: [{
-                    label: 'My First Dataset',
                     data: infos_data,
                     backgroundColor: [
                     'rgb(255, 99, 132, 0.5)',
@@ -65,6 +64,11 @@ export default function DonutChart(data){
             }, 
             options: {
                 legend: {
+                    labels: {
+                        fontSize: 5, 
+                        fontStyle: 'inter', 
+                        fontColor: 'white'
+                    },
                     position: 'bottom'
                 },
                 cutoutPercentage: 60 

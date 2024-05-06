@@ -6,12 +6,11 @@ function User_profile() {
     return (
         <div className={styles.profile}>
             <Image 
-            width={40}    
-            height={40} 
+            className={styles.image}
             src={Dekuple} 
             alt="Image profile entreprise"
             />
-            
+
             <h2>Hello, Dekuple</h2>
         </div>
     )

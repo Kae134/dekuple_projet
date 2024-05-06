@@ -4,3 +4,10 @@
     align-items:center ;
     gap: 1rem;
 }
+
+.image {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #161717;
+    border-radius: 100rem;
+}
