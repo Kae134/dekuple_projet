@@ -13,11 +13,13 @@
 }
 
 .carddetails_horizontal {
+    padding-top: 0;
     width: 100%;
     height: 8rem;
 }
 
 .carddetails_simple {
+    padding-top: 0;
     width: 48%;
     height: 8rem;
 }
@@ -44,4 +46,17 @@
 
 .card p {
     font-size: 8px;
+}
+
+.report {
+    list-style-type: "- ";
+    padding-top: 4rem;
+    padding-left: 2rem;
+    align-items: start;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.cards span {
+    font-size: 16px;
 }

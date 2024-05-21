@@ -84,6 +84,12 @@ main {
   padding: 1rem;
 }
 
+.login_page {
+  background-color: #242424;
+  z-index: 0;
+}
+
+
 
 
 /* @layer base {

@@ -61,4 +61,14 @@ function Details(contents:object, angle:boolean){
     
 }
 
-export { StatsCards, Details }
+function ReportCard(reports:any){
+    return (
+        <div className={`${styles.card} ${styles.carddetails_simple} ${styles.top_color_red} ${styles.report}`}>
+            {reports.map((item)=>{
+                return <span>{item.date + " - " + item.data}</span>
+            })}
+        </div>
+    )
+}
+
+export { StatsCards, Details, ReportCard }

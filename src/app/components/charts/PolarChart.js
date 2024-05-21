@@ -65,11 +65,10 @@ export default function DonutChart(data){
             options: {
                 legend: {
                     labels: {
-                        fontSize: 5, 
-                        fontStyle: 'inter', 
+                        fontSize: 8, 
                         fontColor: 'white'
                     },
-                    position: 'bottom',
+                    position: 'left',
                 },
                 scale: {
                     ticks : {

@@ -42,7 +42,7 @@ function BarChart(data){
                 labels: infos_labels,
                 datasets : [
                     {
-                        label: infos_labels,
+                        label: "",
                         data: infos_data,
                         backgroundColor: 
                         [
