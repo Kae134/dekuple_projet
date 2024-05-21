@@ -1,11 +1,11 @@
-.card {
+.card, .carddetails_simple {
     display: flex;
     flex-direction: column;    
     align-items: center;
     justify-content: center;
     background-color: #161717;
-    width: 48%;
-    height: 8rem;
+    width: 224px;
+    height: 248px;
     border-radius: 1rem;
     box-shadow: inset -2px 4px 10px rgba(0, 0, 0, 0.25);
     padding: 1rem;
@@ -13,15 +13,9 @@
 }
 
 .carddetails_horizontal {
+    height: 248px;
+    width: 224px;
     padding-top: 0;
-    width: 100%;
-    height: 8rem;
-}
-
-.carddetails_simple {
-    padding-top: 0;
-    width: 48%;
-    height: 8rem;
 }
 
 .top_color_yellow {

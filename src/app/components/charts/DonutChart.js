@@ -22,7 +22,7 @@ export default function DonutChart(data){
         }
     } else if (infos.type === "test") {
         for (const ele of infos.data){
-            infos_labels.push(ele.category + ":" + ele.value + "%")
+            infos_labels.push(ele.category)
             infos_data.push(ele.value)
         }
     }
@@ -65,12 +65,13 @@ export default function DonutChart(data){
                 }]
             }, 
             options: {
+                maintainAspectRatio: false,
                 legend: {
                     labels: {
                         fontSize: 8,  
                         fontColor: 'white'
                     },
-                    position: 'right'
+                    position: 'bottom'
                 },
                 cutoutPercentage: 60 
             }
@@ -79,6 +80,6 @@ export default function DonutChart(data){
         chartRef.current.chart = newChart
     }, [])
     return<div id="chart-container">
-        <canvas style={{position: "relative", width: "45vw", height: "10vh"}} ref={chartRef}/>
+        <canvas style={{position: "relative", width: "80%", height: "50%"}} ref={chartRef}/>
     </div>
 }
