@@ -22,7 +22,7 @@ function BarChart(data){
         }
     } else if (infos.type === "test") {
         for (const ele of infos.data){
-            infos_labels.push(ele.category + ":" + ele.value + "%")
+            infos_labels.push(ele.category)
             infos_data.push(ele.value)
         }
     }
@@ -42,7 +42,7 @@ function BarChart(data){
                 labels: infos_labels,
                 datasets : [
                     {
-                        label: infos_labels,
+                        label: "",
                         data: infos_data,
                         backgroundColor: 
                         [
@@ -58,6 +58,7 @@ function BarChart(data){
                 ]
             },
             options: {
+                maintainAspectRatio: false,
                 legend: {
                     labels: {
                         display:false,

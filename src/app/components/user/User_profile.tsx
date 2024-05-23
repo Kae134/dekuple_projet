@@ -1,10 +1,11 @@
 import Image from "next/image"
+import Link from "next/link"
 import Dekuple from "../../../public/image/Dekuple_logo.png"
 import styles from "./User_profile.module.css"
 
 function User_profile() {
     return (
-        <div className={styles.profile}>
+        <Link href="" className={styles.profile}>
             <Image 
             className={styles.image}
             src={Dekuple} 
@@ -12,7 +13,7 @@ function User_profile() {
             />
 
             <h2>Hello, Dekuple</h2>
-        </div>
+        </Link>
     )
 }
 

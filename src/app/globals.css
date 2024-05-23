@@ -10,8 +10,7 @@
 main {
   background-color: #242424;
   display: flex;
-  align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   justify-content: space-between;
 }
@@ -19,10 +18,13 @@ main {
 .main_frame {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  min-height: 100vh;
   width: 100%;
   gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 100px;
 }
 
 .top_main_frame {
@@ -40,28 +42,22 @@ main {
   display: flex;
   flex-flow: wrap;
   justify-content: left;
-  align-items: center;
+  max-height: 50%;
   width: 90%;
   gap: 1rem;
 }
 
-.resume {
+.resume, .details {
   display: flex;
   flex-flow:wrap;
   justify-content:space-evenly;
   align-items: center;
+  height: 30rem;
+  overflow-y: scroll;
   width: 48%;
-  gap: 1rem;
+  gap: 1rem; 
 }
 
-.details {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 48%; 
-  gap: 1rem;
-}
 
 #chart-container {
   display: flex;
@@ -77,12 +73,19 @@ main {
   flex-wrap: wrap;
   justify-content: left;
   align-items: center;
-  width: 60%;
+  min-width: fit-content;
+  max-width: 1280px;
   background-color: #202020;
-  gap: 1rem;
+  gap: 24px;
   border-radius: 2rem;
   padding: 1rem;
 }
+
+.login_page {
+  background-color: #242424;
+  z-index: 0;
+}
+
 
 
 

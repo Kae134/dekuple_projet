@@ -1,12 +1,15 @@
 .Nav_left {
+    position:fixed;
+    top: 0;
+    left: 0;
     background-color: #161717;
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     align-items: center;
-    height: 100%;
-    width: 10vh;
+    height: 100vh;
+    width: 100px;
     justify-content: space-between;
 }
 
@@ -14,11 +17,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .icones {
-    width: 28px;
+    width: 20px;
 }
 
 .links {
@@ -39,5 +42,5 @@
 
 .link:hover {
     background-color: black;
-    border-radius: 100%;
+    border-radius: 20%;
 }

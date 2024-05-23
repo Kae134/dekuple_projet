@@ -22,7 +22,7 @@ export default function DonutChart(data){
         }
     } else if (infos.type === "test") {
         for (const ele of infos.data){
-            infos_labels.push(ele.category + ":" + ele.value + "%")
+            infos_labels.push(ele.category)
             infos_data.push(ele.value)
         }
     }
@@ -42,31 +42,33 @@ export default function DonutChart(data){
                 labels: infos_labels,
                 datasets: [{
                     data: infos_data,
-                    backgroundColor: [
-                    'rgb(255, 99, 132, 0.5)',
-                    'rgb(54, 162, 235, 0.5)',
-                    'rgb(255, 205, 86, 0.5)',
-                    'rgb(255, 99, 132, 0.5)',
-                    'rgb(54, 162, 235, 0.5)',
-                    'rgb(255, 205, 86, 0.5)'
+                    backgroundColor: 
+                    [
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                        'rgba(255, 205, 86, 0.5)',
+                        'rgba(75, 192, 192, 0.5)',
+                        'rgba(153, 102, 255, 0.5)',
+                        'rgba(255, 159, 64, 0.5)'
                     ],
                     hoverOffset: 4,
                     borderWidth: 1,
-                    borderColor: [
-                        'rgb(255, 99, 132, 0.5)',
-                        'rgb(54, 162, 235, 0.5)',
-                        'rgb(255, 205, 86, 0.5)',
-                        'rgb(255, 99, 132, 0.5)',
-                        'rgb(54, 162, 235, 0.5)',
-                        'rgb(255, 205, 86, 0.5)'
+                    borderColor: 
+                    [
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                        'rgba(255, 205, 86, 0.5)',
+                        'rgba(75, 192, 192, 0.5)',
+                        'rgba(153, 102, 255, 0.5)',
+                        'rgba(255, 159, 64, 0.5)'
                     ], 
                 }]
             }, 
             options: {
+                maintainAspectRatio: false,
                 legend: {
                     labels: {
-                        fontSize: 5, 
-                        fontStyle: 'inter', 
+                        fontSize: 8,  
                         fontColor: 'white'
                     },
                     position: 'bottom'
@@ -78,6 +80,6 @@ export default function DonutChart(data){
         chartRef.current.chart = newChart
     }, [])
     return<div id="chart-container">
-        <canvas style={{position: "relative", width: "45vw", height: "10vh"}} ref={chartRef}/>
+        <canvas style={{position: "relative", width: "80%", height: "50%"}} ref={chartRef}/>
     </div>
 }
