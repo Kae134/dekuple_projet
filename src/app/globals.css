@@ -43,6 +43,16 @@ img {
   height: auto;
 }
 
+input {
+  width: 100%;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #4b4b4b31;
+  border: 1px solid #cccccc2f;
+  border-radius: 4px;
+  outline: none;
+}
+
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities;
