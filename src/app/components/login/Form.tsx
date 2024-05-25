@@ -3,6 +3,8 @@ import { Input } from "@nextui-org/input";
 import styles from "./Login.module.css"
 import { createClient } from "@/src/utils/supabase/createClient";
 import Link from "next/link";
+import DekupleLogo from "@/src/public/image/Dekuple_logo.png";
+import Image from "next/image";
 
 export default function Valider() {
     async function connexion(formData: FormData) {
@@ -25,6 +27,12 @@ export default function Valider() {
     };
     return (
         <form action={connexion} className={styles.loginCard}>
+
+            <Image
+                src={DekupleLogo}
+                alt="Dekuple logo"
+                className={styles.img}
+            />
 
             <h2 className={styles.title}>Se connecter</h2>
 
