@@ -1,4 +1,49 @@
-@tailwind base;
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  /* base */
+  --font-family: "Inter", sans-serif;
+  --font-size: 16px;
+  --background-color: #242424;
+  --color: #fff;
+}
+
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -84,7 +129,7 @@ main {
 .login_page {
   background-color: #242424;
   z-index: 0;
-}
+} */
 
 
 
