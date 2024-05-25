@@ -1,107 +1,47 @@
-.login {
-    position: relative;
+.pageLogin {
+    min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 24rem;
-    width: 22rem;
+    align-items: center;
+}
+
+.loginCard {
+    width: 350px;
+    display: flex;
     flex-direction: column;
-    backdrop-filter: blur(100px);
-    border-radius: 1rem;
-    gap: 2rem;
-    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    background-color: #161717;
+    border: 1px solid rgba(255, 255, 255, 0.158);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.login input {
-    color: #161717;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 5px;
-}
-
-.login h2 {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.login label {
-    font-size: 20px;
+.title {
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 .input {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cccccc2f;
+    border-radius: 4px;
 }
 
-.login button {
-    font-size: 20px;
-    font-weight: bold   ;
+.button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #29b7b9;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-.rond {
-    position: fixed;
-    border-radius: 100%;
-    z-index: 1;
-}
-
-.rond1{
-    width: 490px;
-    height: 490px;
-    top: -200px;
-    right: -150px;
-}
-
-.rond2{
-    width: 490px;
-    height: 490px;
-    bottom: -200px;
-    left: -150px;
-}
-
-.rond3{
-    width: 175px;
-    height: 175px;
-    top: 30px;
-    left: 580px;
-}
-
-.rond4{
-    width: 175px;
-    height: 175px;
-    top: 400px;
-    right: 400px;
-}
-
-.rond5{
-    width: 110px;
-    height: 110px;
-    top: 275px;
-    left: 100px;
-}
-
-.rond6{
-    width: 175px;
-    height: 175px;
-    top: 150px;
-    left: 1000px;
-}
-
-.rond7{
-    width: 50px;
-    height: 50px;
-    top: 225px;
-    right: 525px;
-}
-
-
-.grey {
-    background-color: #505050;
-}
-
-.violet {
-    background-color: #A09ABC;
-}
-
-.blur {
-    backdrop-filter: blur(100px);
+.button:hover {
+    background-color: #2a9ea0;
 }

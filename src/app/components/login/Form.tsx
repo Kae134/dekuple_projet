@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 import { Input } from "@nextui-org/input";
 import styles from "./Login.module.css"
 import { createClient } from "@/src/utils/supabase/createClient";
+import Link from "next/link";
 
 export default function Valider() {
     async function connexion(formData: FormData) {
@@ -23,18 +24,15 @@ export default function Valider() {
         redirect('/Dekuple-app/accueil')
     };
     return (
-            <form action={connexion} className={styles.login}>
-                <h2>Connexion</h2>
-                <div className={styles.input}>
-                    <label>LOGIN :</label>
-                    <Input type="email" name="email" required/>
-                </div>
-                <div className={styles.input}>
-                    <label>Mot de passe :</label>
-                    <Input type="password" name="password" required/>
-                </div>
+        <form action={connexion} className={styles.loginCard}>
 
-                <button>Valider</button>
+            <h2 className={styles.title}>Se connecter</h2>
+
+            <Input type="email" name="email" placeholder="Email" required className={styles.input}/>
+
+            <Input type="password" name="password" placeholder="Mot de passe" required className={styles.input}/>
+
+            <button className={styles.button}>Se connecter</button>
         </form>
     )
 }
