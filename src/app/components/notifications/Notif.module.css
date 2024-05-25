@@ -1,0 +1,15 @@
+.card {
+    padding: 3rem;
+    width: 500px;
+    background-color: #161717;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.h2 {
+    font-size: 2rem;
+}
