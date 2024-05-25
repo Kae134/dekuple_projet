@@ -1,0 +1,56 @@
+.card, .carddetails_simple {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    background-color: #161717;
+    width: 224px;
+    height: 248px;
+    border-radius: 1rem;
+    box-shadow: inset -2px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    gap: 0.25rem;
+}
+
+.carddetails_horizontal {
+    height: 248px;
+    width: 224px;
+    padding-top: 0;
+}
+
+.top_color_yellow {
+    border-top: 20px #FCB900 solid;
+}
+
+.top_color_blue {
+    border-top: 20px #009699 solid;
+}
+
+.top_color_red {
+    border-top: 20px #ff3125 solid;
+}
+
+.top_color_green {
+    border-top: 20px #00D084 solid;
+}
+
+.card h1 {
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 8px;
+}
+
+.report {
+    list-style-type: "- ";
+    padding-top: 4rem;
+    padding-left: 2rem;
+    align-items: start;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.cards span {
+    font-size: 16px;
+}
