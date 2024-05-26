@@ -5,10 +5,10 @@ import styles from "./User_profile.module.css"
 
 function User_profile() {
     return (
-        <Link href="" className={styles.profile}>
-            <Image 
+        <Link href="/" className={styles.profile}>
+            <Image
             className={styles.image}
-            src={Dekuple} 
+            src={Dekuple}
             alt="Image profile entreprise"
             />
 
