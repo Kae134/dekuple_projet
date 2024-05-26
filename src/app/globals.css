@@ -1,8 +1,150 @@
-@tailwind base;
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  /* base */
+  --font-family: "Inter", sans-serif;
+  --font-size: 16px;
+  --background-color: #242424;
+  --color: #fff;
+}
+
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #4b4b4b31;
+  border: 1px solid #cccccc2f;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+* {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+main {
+  background-color: #242424;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.main_frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 100px;
+}
+
+.top_main_frame {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 1rem;
+}
+
+.main_frame h1 {
+  font-size: 32px;
+}
+
+.charts_presentation {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: left;
+  max-height: 50%;
+  width: 90%;
+  gap: 1rem;
+}
+
+.resume, .details {
+  display: flex;
+  flex-flow:wrap;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 30rem;
+  overflow-y: scroll;
+  width: 48%;
+  gap: 1rem; 
+}
+
+
+#chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+  height: 300px;
+}
+
+
+.card_temp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  min-width: fit-content;
+  max-width: 1280px;
+  background-color: #202020;
+  gap: 24px;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.login_page {
+  background-color: #242424;
+  z-index: 0;
+} */
+
+
+
+
+/* @layer base {
   :root {
     --background: 200 20% 98%;
     --btn-background: 200 10% 91%;
@@ -21,7 +163,7 @@
 }
 
 @layer base {
-  * {
+   {
     @apply border-foreground/20;
   }
 }
@@ -39,4 +181,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */

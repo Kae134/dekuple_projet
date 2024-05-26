@@ -1,0 +1,46 @@
+.Nav_left {
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: #161717;
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: center;
+    height: 100vh;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.Nav_left_top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.icones {
+    width: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 20px;
+}
+
+.link:hover {
+    background-color: black;
+    border-radius: 20%;
+}

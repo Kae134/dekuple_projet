@@ -1,0 +1,47 @@
+.pageLogin {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginCard {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    background-color: #161717;
+    border: 1px solid rgba(255, 255, 255, 0.158);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cccccc2f;
+    border-radius: 4px;
+}
+
+.button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #29b7b9;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2a9ea0;
+}
