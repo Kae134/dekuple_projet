@@ -2,30 +2,18 @@
 
 import { useRef, useEffect } from "react"
 import { Chart } from "chart.js"
+import { DataForChart, backgroundColor, borderColor } from "./ChartData.js"
 
 function BarChart(data){
     const chartRef = useRef(null)
     const infos = data.data
 
-    let infos_labels = []
-    let infos_data = []
+    let infos_for_graph = DataForChart(infos)
 
-    if (infos.type === "users") {
-        for (const ele of infos.data){
-            infos_labels.push(ele.login)
-            infos_data.push(ele.id)
-        }
-    } else if (infos.type === "entreprise") {
-        for (const ele of infos.data){
-            infos_labels.push(ele.name)
-            infos_data.push(ele.Temperature)
-        }
-    } else if (infos.type === "test") {
-        for (const ele of infos.data){
-            infos_labels.push(ele.category)
-            infos_data.push(ele.value)
-        }
-    }
+    let infos_data = infos_for_graph[1]
+    let infos_labels = infos_for_graph[0]
+
+
 
     useEffect(()=>{
         if(chartRef.current){
@@ -44,15 +32,7 @@ function BarChart(data){
                     {
                         label: "",
                         data: infos_data,
-                        backgroundColor: 
-                        [
-                            'rgba(255, 99, 132, 0.5)',
-                            'rgba(54, 162, 235, 0.5)',
-                            'rgba(255, 205, 86, 0.5)',
-                            'rgba(75, 192, 192, 0.5)',
-                            'rgba(153, 102, 255, 0.5)',
-                            'rgba(255, 159, 64, 0.5)'
-                        ],
+                        backgroundColor: backgroundColor,
                         borderWidth: 1,
                     }
                 ]
@@ -88,7 +68,7 @@ function BarChart(data){
         chartRef.current.chart = newChart
     }, [])
     return <div id="chart-container">
-        <canvas style={{position: "relative", width: "45vw", height: "10vh"}} ref={chartRef}/>
+        <canvas style={{position: "relative", width: "80%", height: "10vh"}} ref={chartRef}/>
     </div>
 }
 

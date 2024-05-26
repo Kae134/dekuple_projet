@@ -21,11 +21,22 @@ html {
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   font-family: var(--font-family);
   font-size: var(--font-size);
   background-color: var(--background-color);
   color: var(--color);
+}
+
+.resume, .details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 ul {

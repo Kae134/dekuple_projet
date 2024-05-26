@@ -28,6 +28,7 @@ async function StatsCards(where:string, chart:string) {
                     <DonutChart data={infos}/>
                 </div>
             )
+            break;
         case "polar":
         return (
             <div className={`${styles.card}`}>

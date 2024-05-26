@@ -4,9 +4,9 @@ import { StatsCards, Details } from '../../components/cards/StatsCards';
 import { User_profile } from '../../components/user/User_profile';
 
 function Home() {
-    const Bar = StatsCards("test", "bar")
-    const Donut = StatsCards("test", "donut")
-    const Polar = StatsCards("test", "polar")
+    const Bar = StatsCards("humidity_distribution", "bar")
+    const Donut = StatsCards("humidity_distribution", "donut")
+    const Polar = StatsCards("humidity_distribution", "polar")
 
     const content_example = {
         'title': "Information quotidienne",
