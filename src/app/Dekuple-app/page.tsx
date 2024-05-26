@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation'
-import NavBarv2 from '../components/navbarv2/NavBarv2';
+import NavBarv2 from '../components/navbar/NavBar';
 import Notifications from '../components/notifications/Notifications'
 import CardGraph from '../components/cardGraph/CardGraph'
 import Drag from '../components/dragAndDrop/Drag'

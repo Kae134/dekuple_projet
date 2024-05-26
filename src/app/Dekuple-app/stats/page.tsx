@@ -1,7 +1,7 @@
 import React from 'react';
-import NavLeft from '../../components/navbar/NavBar';
 import { StatsCards, Details } from '../../components/cards/StatsCards';
 import { User_profile } from '../../components/user/User_profile';
+import NavBar from '../../components/navbar/NavBar';
 
 function Home() {
     const Bar = StatsCards("test", "bar")
@@ -17,7 +17,7 @@ function Home() {
 
     return (
         <main>
-            <NavLeft />
+            <NavBar />
             <div className='main_frame'>
                 <div className='top_main_frame'>
                     <User_profile />
@@ -32,7 +32,7 @@ function Home() {
                         {Details_card_simpl}
                     </div>
                     <div className='details'>
-                        {Polar}
+                        {/* {Polar} */}
                         {Bar}
                         {Donut}    
                         {Donut}

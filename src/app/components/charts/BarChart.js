@@ -3,7 +3,7 @@
 import { useRef, useEffect } from "react"
 import { Chart } from "chart.js"
 
-function BarChart(data){
+export default function BarChart(data){
     const chartRef = useRef(null)
     const infos = data.data
 
@@ -91,5 +91,3 @@ function BarChart(data){
         <canvas style={{position: "relative", width: "45vw", height: "10vh"}} ref={chartRef}/>
     </div>
 }
-
-export default BarChart
