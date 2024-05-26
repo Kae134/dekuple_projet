@@ -25,7 +25,8 @@ function BarChart(data){
             infos_labels.push(ele.category)
             infos_data.push(ele.value)
         }
-    }
+    } 
+
 
     useEffect(()=>{
         if(chartRef.current){
