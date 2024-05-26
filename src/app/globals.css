@@ -18,10 +18,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  padding-left: 100px;
+  padding: 50px 50px 50px 150px;
   min-height: 100vh;
   font-family: var(--font-family);
   font-size: var(--font-size);
@@ -77,11 +78,15 @@ input {
   border-radius: 12px;
 }
 
+main {
+  min-height: calc(100vh - 100px);
+}
 
 
 
-
-
+::-webkit-scrollbar {
+  display: none;
+}
 
 
 
