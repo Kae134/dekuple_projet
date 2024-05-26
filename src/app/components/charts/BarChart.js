@@ -88,6 +88,6 @@ export default function BarChart(data){
         chartRef.current.chart = newChart
     }, [])
     return <div id="chart-container">
-        <canvas style={{position: "relative", width: "45vw", height: "10vh"}} ref={chartRef}/>
+        <canvas style={{width: "100%", height: "auto"}} ref={chartRef}/>
     </div>
 }

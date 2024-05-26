@@ -17,7 +17,7 @@ async function StatsCards(where:string, chart:string) {
     switch (chart) {
         case "bar":
             return (
-                <div className={`${styles.card}`}>
+                <div className={styles.card}>
                     <BarChart data={infos}/>
                 </div>
             )

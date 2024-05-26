@@ -8,7 +8,9 @@ interface CardGraph1Props {
 export default function CardGraph({ color }: CardGraph1Props) {
   return (
     <div className={styles.card}>
-      <div className={styles.cardHeader} style={{ backgroundColor: color }}></div>
+      <div className={styles.cardHeader} style={{ backgroundColor: color }}>
+        
+      </div>
     </div>
   );
 }
