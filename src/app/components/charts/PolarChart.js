@@ -85,6 +85,6 @@ export default function DonutChart(data){
         chartRef.current.chart = newChart
     }, [])
     return<div id="chart-container">
-        <canvas style={{position: "relative", width: "80%", height: "50%"}} ref={chartRef}/>
+        <canvas style={{ width: "100%", height: "auto"}} ref={chartRef}/>
     </div>
 }

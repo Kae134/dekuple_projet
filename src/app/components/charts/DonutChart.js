@@ -42,7 +42,7 @@ export default function DonutChart(data){
                 labels: infos_labels,
                 datasets: [{
                     data: infos_data,
-                    backgroundColor: 
+                    backgroundColor:
                     [
                         'rgba(255, 99, 132, 0.5)',
                         'rgba(54, 162, 235, 0.5)',
@@ -53,7 +53,7 @@ export default function DonutChart(data){
                     ],
                     hoverOffset: 4,
                     borderWidth: 1,
-                    borderColor: 
+                    borderColor:
                     [
                         'rgba(255, 99, 132, 0.5)',
                         'rgba(54, 162, 235, 0.5)',
@@ -61,25 +61,25 @@ export default function DonutChart(data){
                         'rgba(75, 192, 192, 0.5)',
                         'rgba(153, 102, 255, 0.5)',
                         'rgba(255, 159, 64, 0.5)'
-                    ], 
+                    ],
                 }]
-            }, 
+            },
             options: {
                 maintainAspectRatio: false,
                 legend: {
                     labels: {
-                        fontSize: 8,  
+                        fontSize: 8,
                         fontColor: 'white'
                     },
                     position: 'bottom'
                 },
-                cutoutPercentage: 60 
+                cutoutPercentage: 60
             }
         });
 
         chartRef.current.chart = newChart
     }, [])
     return<div id="chart-container">
-        <canvas style={{position: "relative", width: "80%", height: "50%"}} ref={chartRef}/>
+        <canvas style={{width: "100%", height: "auto"}} ref={chartRef}/>
     </div>
 }

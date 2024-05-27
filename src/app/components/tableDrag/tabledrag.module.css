@@ -1,0 +1,32 @@
+.part {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #161717;
+    border: 1px solid rgba(255, 255, 255, 0.158);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.part:hover {
+    transform: scale(1.01);
+}
+
+.left {
+    display: flex;
+    gap: 1rem;
+}
+
+.p {
+    text-transform: uppercase;
+}
+
+.right {
+    font-size: 1.25rem;
+    display: flex;
+    gap: 1rem;
+}

@@ -1,4 +1,8 @@
 .pageLogin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,7 +21,6 @@
     border: 1px solid rgba(255, 255, 255, 0.158);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transform: translateX(-50px);
 }
 
 .title {
