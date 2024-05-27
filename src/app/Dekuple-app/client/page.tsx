@@ -2,11 +2,11 @@ import React from 'react';
 import NavBarv from '../../components/navbar/NavBar';
 import Drag from '../../components/dragAndDrop/Drag'
 import TableDrag from '../../components/tableDrag/TableDrag'
-import style from './client.module.css'
+import styles from './client.module.css'
 
 function Home() {
     return (
-        <div className={style.container}>
+        <div className={styles.container}>
             <NavBarv />
             <Drag />
             <TableDrag />
